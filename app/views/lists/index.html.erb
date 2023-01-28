@@ -1,0 +1,10 @@
+<div class="container">
+  <h1 class="text-center">Watch Lists</h1>
+    <div>
+      <ul class="list-unstyled">
+        <% @lists.each do |list| %>
+          <li><%= link_to list.name, list_path(list), class: "text-decoration-none" %></li>
+        <% end %>
+      </ul>
+    </div>
+</div>
